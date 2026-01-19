@@ -85,9 +85,9 @@ yarn dev
 
 ## 📍 Usage
 
-**1. Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).**
-**2. Click Generate Invoice.**
-**3. Review the auto-completed invoice with line items and totals.**
+**1. Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).**  
+**2. Click Generate Invoice.**  
+**3. Review the auto-completed invoice with line items and totals.**  
 **4. Download or export as PDF if available.**
 
 ## 🤝 Contributing
