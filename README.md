@@ -61,4 +61,69 @@ Ensure you have the following installed:
    ```
    git clone https://github.com/Sandeep-2412/AI-Invoice-Generator.git
    cd AI-Invoice-Generator
-  
+  ```
+2. **Install dependencies
+
+npm install
+# or
+yarn install
+
+
+Configure environment variables
+
+Create a .env file in the root:
+
+AI_API_KEY=your_ai_api_key_here
+PORT=4000
+
+
+Start the app
+
+npm run dev
+# or
+yarn dev
+
+
+Open your browser at http://localhost:3000
+
+📍 Usage
+
+Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).
+
+Click Generate Invoice.
+
+Review the auto-completed invoice with line items and totals.
+
+Download or export as PDF if available.
+
+🤝 Contributing
+
+Contributions are welcome! You can help by:
+
+Improving AI logic and parsing accuracy
+
+Adding invoice export formats (PDF, DOCX, Excel)
+
+Enhancing frontend UI/UX
+
+Fixing bugs or optimizing performance
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes
+
+Push to your fork
+
+Open a Pull Request
+
+📝 License
+
+This project is open-source and available under the MIT License.
+
+💬 Contact
+
+Have questions, suggestions, or issues?
+
+🔗 Open an issue here on GitHub or reach out to the maintainer.
