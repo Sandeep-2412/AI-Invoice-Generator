@@ -57,12 +57,12 @@ Ensure you have the following installed:
 
 ### Steps
 
-##1. **Clone the repository**
+## 1. **Clone the repository**
 ```
    git clone https://github.com/Sandeep-2412/AI-Invoice-Generator.git
    cd AI-Invoice-Generator
 ```
-##2. **Install dependencies**
+## 2. **Install dependencies**
 ```
 npm install
 # or
