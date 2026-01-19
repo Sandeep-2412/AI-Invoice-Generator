@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import KpiCard from "../components/KpiCard";
 import StatusBadge from "../components/StatusBadge";
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://ai-invoice-generator-n8kq.onrender.com";
 /* normalize client object */
 function normalizeClient(raw) {
   if (!raw) return { name: "", email: "", address: "", phone: "" };

@@ -6,7 +6,7 @@ import {
 } from "../assets/dummyStyles";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import { useState, useEffect } from "react";
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://ai-invoice-generator-n8kq.onrender.com";
 const UploadIcon = ({ className = "w-5 h-5" }) => (
   <svg
     className={className}
