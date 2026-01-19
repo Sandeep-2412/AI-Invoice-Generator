@@ -85,10 +85,10 @@ yarn dev
 
 ## 📍 Usage
 
-### 1. Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).
-### 2. Click Generate Invoice.
-### 3. Review the auto-completed invoice with line items and totals.
-### 4. Download or export as PDF if available.
+# 1. Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).
+# 2. Click Generate Invoice.
+# 3. Review the auto-completed invoice with line items and totals.
+# 4. Download or export as PDF if available.
 
 ## 🤝 Contributing
 - Contributions are welcome! You can help by:
@@ -105,6 +105,6 @@ yarn dev
 ## 📝 License
 This project is open-source and available under the MIT License.
 ## 💬 Contact
-Have questions, suggestions, or issues?
-LinkedIn - [https://www.linkedin.com/in/venkata-sandeep-macha-8a9ba8229/](https://www.linkedin.com/in/venkata-sandeep-macha-8a9ba8229/)
-Gmail - [v.macha@ufl.edu](v.macha@ufl.edu)
+Have questions, suggestions, or issues?  
+LinkedIn - [Venkata Sandeep Macha](https://www.linkedin.com/in/venkata-sandeep-macha-8a9ba8229/)  
+Gmail - [Outlook](v.macha@ufl.edu)
