@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { invoicesStyles } from "../assets/dummyStyles";
 import { useAuth } from "@clerk/clerk-react";
 
-const API_BASE = "https://ai-invoice-generator-n8kq.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 /* ---------- helpers ---------- */
 /* ----------------- frontend-only: normalize image URLs ----------------- */
