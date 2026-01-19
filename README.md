@@ -57,73 +57,54 @@ Ensure you have the following installed:
 
 ### Steps
 
-1. **Clone the repository**
-   ```
+##1. **Clone the repository**
+```
    git clone https://github.com/Sandeep-2412/AI-Invoice-Generator.git
    cd AI-Invoice-Generator
-  ```
-2. **Install dependencies
-
+```
+##2. **Install dependencies**
+```
 npm install
 # or
 yarn install
+```
 
-
-Configure environment variables
-
+## 3. **Configure environment variables**
 Create a .env file in the root:
-
+```
 AI_API_KEY=your_ai_api_key_here
 PORT=4000
-
-
-Start the app
-
+```
+## 4. **Start the app**
+```
 npm run dev
 # or
 yarn dev
+```
+## 5. **Open your browser at http://localhost:3000**
 
+## 📍 Usage
 
-Open your browser at http://localhost:3000
+### 1. Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).
+### 2. Click Generate Invoice.
+### 3. Review the auto-completed invoice with line items and totals.
+### 4. Download or export as PDF if available.
 
-📍 Usage
+## 🤝 Contributing
+- Contributions are welcome! You can help by:
+- Improving AI logic and parsing accuracy
+- Adding invoice export formats (PDF, DOCX, Excel)
+- Enhancing frontend UI/UX
+- Fixing bugs or optimizing performance
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/YourFeature)
+3. Commit your changes
+4. Push to your fork
+5. Open a Pull Request
 
-Enter a natural language description of your invoice (e.g., “Web design services — 20 hours at $50/hr”).
-
-Click Generate Invoice.
-
-Review the auto-completed invoice with line items and totals.
-
-Download or export as PDF if available.
-
-🤝 Contributing
-
-Contributions are welcome! You can help by:
-
-Improving AI logic and parsing accuracy
-
-Adding invoice export formats (PDF, DOCX, Excel)
-
-Enhancing frontend UI/UX
-
-Fixing bugs or optimizing performance
-
-Fork the repository
-
-Create a feature branch (git checkout -b feature/YourFeature)
-
-Commit your changes
-
-Push to your fork
-
-Open a Pull Request
-
-📝 License
-
+## 📝 License
 This project is open-source and available under the MIT License.
-
-💬 Contact
-
+## 💬 Contact
 Have questions, suggestions, or issues?
-
-🔗 Open an issue here on GitHub or reach out to the maintainer.
+LinkedIn - [https://www.linkedin.com/in/venkata-sandeep-macha-8a9ba8229/](https://www.linkedin.com/in/venkata-sandeep-macha-8a9ba8229/)
+Gmail - [v.macha@ufl.edu](v.macha@ufl.edu)
