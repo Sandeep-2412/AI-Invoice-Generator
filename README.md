@@ -1,8 +1,8 @@
 # AI-Invoice-Generator
 
-An intuitive AI-powered invoice generator that helps you create professional invoices quickly using natural language. Describe your services and let the AI generate a complete, formatted invoice in seconds! :contentReference[oaicite:1]{index=1}
+An intuitive AI-powered invoice generator that helps you create professional invoices quickly using natural language. Describe your services and let the AI generate a complete, formatted invoice in seconds!
 
-Live Demo: [https://ai-invoice-generator-six.vercel.app](https://ai-invoice-generator-six.vercel.app)
+Live Demo: [AI Invoice Generator](https://ai-invoice-generator-six.vercel.app)
 
 ---
 
@@ -29,7 +29,7 @@ Live Demo: [https://ai-invoice-generator-six.vercel.app](https://ai-invoice-gene
 ## 📺 Demo
 
 View the live deployed version here:  
-👉 https://ai-invoice-generator-six.vercel.app
+👉 [AI Invoice Generator](https://ai-invoice-generator-six.vercel.app)
 
 ---
 
