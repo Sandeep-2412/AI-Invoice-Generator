@@ -83,12 +83,12 @@ const defaultProfile = {
   signatureTitle: "",
 };
 
-function currencyFmt(amount = 0, currency = "INR") {
+function currencyFmt(amount = 0, currency = "USD") {
   try {
-    if (currency === "INR") {
+    if (currency === "USD") {
       return new Intl.NumberFormat("en-IN", {
         style: "currency",
-        currency: "INR",
+        currency: "USD",
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
       }).format(amount);
@@ -232,7 +232,7 @@ export default function InvoicePreview() {
                   ? [...data.items]
                   : [],
               invoiceNumber: data.invoiceNumber ?? data.invoiceNumber ?? "",
-              currency: data.currency || "INR",
+              currency: data.currency || "USD",
             };
             setInvoice(normalized);
             return;
@@ -428,7 +428,7 @@ export default function InvoicePreview() {
   const signatureTitle = invoice.signatureTitle ?? profile.signatureTitle ?? "";
 
   const client = normalizeClient(invoice.client);
-  const invoiceCurrency = invoice.currency || "INR";
+  const invoiceCurrency = invoice.currency || "USD";
 
   return (
     <div className={invoicePreviewStyles.pageContainer}>

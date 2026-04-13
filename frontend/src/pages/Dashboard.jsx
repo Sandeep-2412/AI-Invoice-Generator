@@ -21,13 +21,13 @@ function normalizeClient(raw) {
   return { name: "", email: "", address: "", phone: "" };
 }
 
-function currencyFmt(amount = 0, currency = "INR") {
+function currencyFmt(amount = 0, currency = "USD") {
   try {
     const n = Number(amount || 0);
-    if (currency === "INR")
+    if (currency === "USD")
       return new Intl.NumberFormat("en-IN", {
         style: "currency",
-        currency: "INR",
+        currency: "USD",
       }).format(n);
     return new Intl.NumberFormat(undefined, {
       style: "currency",
@@ -179,7 +179,7 @@ const Dashboard = () => {
       const mapped = (Array.isArray(raw) ? raw : []).map((inv) => {
         const clientObj = inv.client ?? {};
         const amountVal = Number(inv.total ?? inv.amount ?? 0);
-        const currency = (inv.currency || "INR").toUpperCase();
+        const currency = (inv.currency || "USD").toUpperCase();
 
         return {
           ...inv,
@@ -239,24 +239,24 @@ const Dashboard = () => {
   }, [fetchInvoices, fetchBusinessProfile, isSignedIn]);
 
   const HARD_RATES = {
-    USD_TO_INR: 83,
+    USD_TO_USD: 83,
   };
 
-  function convertToINR(amount = 0, currency = "INR") {
+  function convertToUSD(amount = 0, currency = "USD") {
     const n = Number(amount || 0);
-    const curr = String(currency || "INR")
+    const curr = String(currency || "USD")
       .trim()
       .toUpperCase();
 
-    if (curr === "INR") return n;
-    if (curr === "USD") return n * HARD_RATES.USD_TO_INR;
+    if (curr === "USD") return n;
+    if (curr === "USD") return n * HARD_RATES.USD_TO_USD;
     return n;
   }
 
   const kpis = useMemo(() => {
     const totalInvoices = storedInvoices.length;
-    let totalPaid = 0; // in INR
-    let totalUnpaid = 0; // in INR
+    let totalPaid = 0; // in USD
+    let totalUnpaid = 0; // in USD
     let paidCount = 0;
     let unpaidCount = 0;
 
@@ -265,15 +265,15 @@ const Dashboard = () => {
         typeof inv.amount === "number"
           ? inv.amount
           : Number(inv.total ?? inv.amount ?? 0);
-      const invCurrency = inv.currency || "INR";
-      const amtInINR = convertToINR(rawAmount, invCurrency);
+      const invCurrency = inv.currency || "USD";
+      const amtInUSD = convertToUSD(rawAmount, invCurrency);
 
       if (inv.status === "Paid") {
-        totalPaid += amtInINR;
+        totalPaid += amtInUSD;
         paidCount++;
       }
       if (inv.status === "Unpaid" || inv.status === "Overdue") {
-        totalUnpaid += amtInINR;
+        totalUnpaid += amtInUSD;
         unpaidCount++;
       }
     });
@@ -364,15 +364,15 @@ const Dashboard = () => {
         />
         <KpiCard
           title="Total Paid"
-          value={currencyFmt(kpis.totalPaid, "INR")}
-          hint="Received Amount (INR)"
+          value={currencyFmt(kpis.totalPaid, "USD")}
+          hint="Received Amount (USD)"
           iconType="revenue"
           trend={12.2}
         />
         <KpiCard
           title="Total Unpaid"
-          value={currencyFmt(kpis.totalUnpaid, "INR")}
-          hint="Outstanding Balance (INR)"
+          value={currencyFmt(kpis.totalUnpaid, "USD")}
+          hint="Outstanding Balance (USD)"
           iconType="clock"
           trend={-3.1}
         />
@@ -402,7 +402,7 @@ const Dashboard = () => {
                     kpis.totalInvoices > 0
                       ? (kpis.totalPaid + kpis.totalUnpaid) / kpis.totalInvoices
                       : 0,
-                    "INR",
+                    "USD",
                   )}
                 </span>
               </div>

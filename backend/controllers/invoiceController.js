@@ -130,7 +130,7 @@ export async function createInvoice(req, res) {
       subtotal: totals.subtotal,
       tax: totals.tax,
       total: totals.total,
-      currency: body.currency || "INR",
+      currency: body.currency || "USD",
       status: body.status ? String(body.status).toLowerCase() : "draft",
       taxPercent,
       logoDataUrl:

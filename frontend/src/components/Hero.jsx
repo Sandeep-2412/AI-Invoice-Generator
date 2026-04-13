@@ -161,10 +161,10 @@ const Hero = () => {
                   {[
                     {
                       description: "Website Design & Development",
-                      amount: "₹15,000",
+                      amount: "$120",
                     },
-                    { description: "Consultation (2 hours)", amount: "₹3,000" },
-                    { description: "Premium Hosting Setup", amount: "₹2,500" },
+                    { description: "Consultation (2 hours)", amount: "$35" },
+                    { description: "Premium Hosting Setup", amount: "$25" },
                   ].map((item, index) => (
                     <div key={index} className={heroStyles.itemRow}>
                       <div className="flex items-center gap-3">
@@ -184,17 +184,17 @@ const Hero = () => {
                     <span className={heroStyles.calculationLabel}>
                       Subtotal
                     </span>
-                    <span className={heroStyles.calculationValue}>₹20,500</span>
+                    <span className={heroStyles.calculationValue}>$180</span>
                   </div>
                   <div className={heroStyles.calculationRow}>
                     <span className={heroStyles.calculationLabel}>
                       GST (18%)
                     </span>
-                    <span className={heroStyles.calculationValue}>₹3,240</span>
+                    <span className={heroStyles.calculationValue}>$32.4</span>
                   </div>
                   <div className={heroStyles.totalRow}>
                     <span className={heroStyles.totalLabel}>Total Amount</span>
-                    <span className={heroStyles.totalValue}>₹23,740</span>
+                    <span className={heroStyles.totalValue}>$212.4</span>
                   </div>
                 </div>
                 <div className={heroStyles.actionButtons}>
@@ -215,7 +215,7 @@ const Hero = () => {
                   <div className={heroStyles.aiIndicatorDot}></div>
                   <span>AI parsed from:</span>
                   <span className={heroStyles.aiIndicatorText}>
-                    "Invoice for the web design - Rs.15000..."
+                    "Invoice for the web design - USD 120..."
                   </span>
                 </div>
               </div>

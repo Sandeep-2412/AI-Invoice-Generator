@@ -83,12 +83,12 @@ function normalizeClient(raw) {
   return { name: "", email: "", address: "", phone: "" };
 }
 
-function formatCurrency(amount = 0, currency = "INR") {
+function formatCurrency(amount = 0, currency = "USD") {
   try {
-    if (currency === "INR") {
+    if (currency === "USD") {
       return new Intl.NumberFormat("en-IN", {
         style: "currency",
-        currency: "INR",
+        currency: "USD",
       }).format(amount);
     }
     return new Intl.NumberFormat(undefined, {
@@ -571,7 +571,7 @@ export default function InvoicesPage() {
         dueDate: "",
         client: clientPlaceholder || "",
         items: [],
-        currency: "INR",
+        currency: "USD",
         status: "Draft",
         notes: "",
         taxPercent: 18,
